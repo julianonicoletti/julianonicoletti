@@ -4,6 +4,7 @@
 
 ## 🚀 Sobre mim
 Eu sou uma interessada em desenvolver programas e projetos full stack...
+Estudo Engenharia de Software na Unifil, Londrina - PR.
 
 
 ## Outras seções comuns em perfis do GitHub
