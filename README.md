@@ -3,7 +3,7 @@
 
 
 ## 🚀 Sobre mim
-Eu sou uma interessada em desenvolver programas e projetos full stack...
+Eu estou interessado em desenvolver programas e projetos full stack...
 Estudo Engenharia de Software na Unifil, Londrina - PR.
 
 
