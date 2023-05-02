@@ -16,7 +16,7 @@ Estudo Engenharia de Software na Unifil, Londrina - PR.
 
 🤔 Procuro ajuda com assuntos relacionados a lógica de programação e Python
 
-💬 Me pergunte sobre medicamentos, exames laboratoriais, interações entre medicsamentos.
+💬 Me pergunte sobre medicamentos, exames laboratoriais, interações entre medicamentos.
 
 📫 Como entrar em contato comigo...
 
