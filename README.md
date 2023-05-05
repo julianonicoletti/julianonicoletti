@@ -41,7 +41,7 @@ Gestão de pessoas, aprender e ir atrás.
 ## Linguagens
 <div>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" align="center" height="60"width="70" title="Em aprendizagem..."/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" align="center" height="60"width="70" title="Em aprendizagem.../>     
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" align="center" height="60"width="70" title="Em aprendizagem..."/>     
     
 </div>
 
