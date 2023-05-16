@@ -33,6 +33,7 @@ Tive meu primeiro contato com computadores lá pelos anos 90 quando meu pai comp
 
 <br>
 <br>
+
 ## Contato
 <a href="https://www.linkedin.com/in/juliano-nicoletti-06549359/">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" align="center" height="60"width="70">
