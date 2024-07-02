@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text in Box</title>
+    <style>
+        /* Estilos para a caixa azul */
+        .box {
+            background-color: #f0f8ff; /* Cor de fundo azul claro */
+            padding: 30px; /* Espaçamento interno da caixa */
+            border: 1px solid #a6cae1; /* Borda da caixa */
+            border-radius: 10px; /* Borda arredondada */
+            width: 80%; /* Largura da caixa */
+            margin: 20px auto; /* Centralizar a caixa horizontalmente com margem */
+            text-align: center; /* Centralizar o texto dentro da caixa */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal; /* Fonte do texto */
+        }
+
+        /* Estilos para o efeito de digitação */
+        .typing {
+            font-size: 1.5em; /* Tamanho da fonte */
+            font-weight: bold; /* Negrito */
+            color: #333; /* Cor do texto */
+            overflow: hidden; /* Evita que o texto apareça antes da animação */
+            white-space: nowrap; /* Garante que o texto não quebre linha */
+            margin: 0 auto;
+            letter-spacing: .1em; /* Espaçamento entre caracteres */
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+            transform: scale(1); /* Efeito de escala inicial */
+            transition: transform 0.5s ease-out; /* Transição suave de escala */
+        }
+
+        /* Animação de digitação */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Animação do cursor de digitação */
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 id="greeting" style="color: #333;">Bom dia!</h1>
+        <p id="text" class="typing"></p>
+    </div>
+
+    <script>
+        // Função para obter o período do dia
+        function getGreeting() {
+            var hour = new Date().getHours();
+            var greeting = "Bom dia!";
+
+            if (hour >= 12 && hour < 18) {
+                greeting = "Boa tarde!";
+            } else if (hour >= 18 || hour < 6) {
+                greeting = "Boa noite!";
+            }
+
+            return greeting;
+        }
+
+        // Função para animar texto com troca automática
+        function animateText() {
+            var phrases = [
+                "Olá, meu nome é Juliano Batistela Nicoletti",
+                "Este é o meu Portfólio de Ciência de Dados"
+            ];
+            var index = 0;
+            var textElement = document.getElementById('text');
+            var greetingElement = document.getElementById('greeting');
+
+            greetingElement.textContent = getGreeting(); // Define a saudação baseada no horário
+
+            function typeWriter() {
+                var text = phrases[index];
+                var charIndex = 0;
+                var typingInterval = setInterval(function() {
+                    if (charIndex < text.length) {
+                        textElement.textContent += text.charAt(charIndex);
+                        charIndex++;
+                    } else {
+                        clearInterval(typingInterval);
+                        setTimeout(function() {
+                            eraseText();
+                        }, 2500); // Aguarda 4 segundos antes de apagar o texto
+                    }
+                }, 70); // Velocidade de digitação (100 milissegundos)
+
+                function eraseText() {
+                    var eraseInterval = setInterval(function() {
+                        if (textElement.textContent.length > 0) {
+                            textElement.textContent = textElement.textContent.slice(0, -1);
+                        } else {
+                            clearInterval(eraseInterval);
+                            index = (index + 1) % phrases.length;
+                            setTimeout(function() {
+                                typeWriter();
+                            }, 500); // Aguarda 0.5 segundos antes de começar a próxima frase
+                        }
+                    }, 25); // Velocidade de apagar texto (50 milissegundos)
+                }
+            }
+
+            typeWriter();
+        }
+
+        // Inicia a animação após um atraso de 1 segundo (1000 milissegundos)
+        setTimeout(function() {
+            animateText();
+        }, 1000);
+    </script>
+</body>
+</html>
