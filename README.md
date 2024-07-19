@@ -16,6 +16,7 @@
 - Estudei Java e Python.
 - Tenho vários projetos concluídos onde utlizado bibliotecas do Python para análise e criação de modelos de predição (Pandas, Scikit-learn, Jupyter Notebook, Matplotlib)
 - Tenho conhecimentos sólidos de SQL e DataWarehouse.
+- Uso de estatística para análise e ciência de dados, inferência, probabilidades, medidas de dispersão e de posição, distribuição, experimentos e significância.
 - Power BI e Excel.
 - Noções básicas de HTML e CSS.
   
@@ -33,6 +34,19 @@
 
 ## 📑Projetos
 
+### 🚗 [Propensão de contratação de Seguro Automotivo](https://github.com/julianonicoletti/health_insurance_app)
+A empresa atuante no ramo de Seguro de Saúde pretendia expandir para a área de seguros automotivos. Para isso dispunha de uma base de dados com informações dos clientes cadastrados. A partir da análise desses dados criamos um modelo para ranquear os mais propensos a contratar esse serviço para que o serviço de telemarketing tenha melhores resultados do que a escolha aleatória da lista. A solução foi hospedado na nuvem e foi criado um script no Google Sheets para que os colaboradores pudessem ter as predições diretamente na tabela com os dados dos clientes.
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <div style="display: flex; justify-content: center;">
+        <img src="image-10.png" alt="alt text" height="120" style="margin: 20 10px;">
+        <img src="image-11.png" alt="alt text" height="160" style="margin: 0 10px;">
+    </div>
+    <img src="sheet_prediction.gif" alt="alt text" height="250" style="margin: 20px 0;">
+</div>
+
+[Veja o projeto no GitHub](https://github.com/julianonicoletti/health_insurance_app)
+
+---
 ### 📈 [Previsão de faturamento de uma rede de Farmácias](https://github.com/julianonicoletti/rossmann_prediction_deploy)
 
 Com dados públicos fornecido por uma rede de farmácias da Europa, fiz uma análise exploratória seguido pela construção de um modelo de predição de faturamento para as próximas 12 semanas de cada uma das 1015 filiais. A solução foi entregue e pode ser acessada via Bot do Telegram.
